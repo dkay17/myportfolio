@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pageStyle.css">
+    <title>View CV - Marvin Idibia</title>
+</head>
+<body>
+    <div class="content">
+        <div class="contentItems">
+            <div class="head">
+                <div class="title">Portfolio</div>
+                <nav id='nav'>
+                    <a href="../index.html"><button class='but' onclick="homeButton()">Home</button></a>
+                    <a href="about.html"><button class='but'>About</button></a>
+                    <a href="projects.html"><button class='but'>Projects</button></a>
+                    <a href="#"><button class='but activePage'>Contact</button></a>
+                </nav>
+            </div>
+            <div class="form-container">
+                <div id="form">
+                    <div class="form-title">CONTACT</div>
+                    <div class="form-content">
+                        <div class="form-row">
+                            Name:
+                            <input placeholder="Enter your name or Company Name" name="name">
+                        </div>
+                        <div class="form-row">
+                            Location:
+                            <input placeholder="eg. Greater Accra,Ghana" name="location">
+                        </div>
+                        <div class="form-row">
+                            Reason for contact:
+                            <input placeholder="eg. Employment" name="reason" itemref="ref">
+                        </div>
+                        <div class="form-row">
+                            Message:
+                            <input placeholder="eg. Would like to hire me" name="msg">
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div id="whatsapp" onclick="whatsapp()" class="whatsapp-email">WhatsApp</div>
+                        <div id="email" onclick="email()" class="whatsapp-email">E-mail</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="pageScripts.js"></script>
+</body>
+</html>
+
+
+<!-- const download = () => {
+    const fileUrl = {Assign};
+    const fileName = 'Assign.txt';
+  
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.click();
+  };
+    
+  return (
+      <div className="cv0">
+          <div className="cv01">
+              <b><span>Download</span></b>
+              <div id="cv">
+                  <span>My Resume</span>
+                  <button onClick={download} className="download">Download</button>
+              </div>
+          </div>
+      </div>
+  ) -->
