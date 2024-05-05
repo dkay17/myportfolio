@@ -40,6 +40,13 @@
 // }
 // currentslide[i].style.display = "none";
 
+// let body = document.documentElement.textContent
+let currentWidth = document.documentElement.clientWidth
+if(currentWidth < 930){
+    // location.reload()
+    document.documentElement.textContent = 'Mobile version not available'
+}
+console.log(currentWidth)
 
 function download() {
     let link = document.createElement('a');
