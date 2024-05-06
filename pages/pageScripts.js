@@ -1,3 +1,12 @@
+//For All
+let currentWidth = document.documentElement.clientWidth
+if(currentWidth < 930){
+    // location.reload()
+    document.documentElement.textContent = 'Mobile version not available'
+}
+
+
+
 //For About page
 
 
