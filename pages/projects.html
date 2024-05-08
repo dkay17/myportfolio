@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Projects - Marvin Idibia</title>
 </head>
 <body>
@@ -16,7 +17,15 @@
                     <a href="about.html"><button class='but'>About</button></a>
                     <a href="#"><button class='but activePage' >Projects</button></a>
                     <a href="contact.html"><button class='but'>Contact</button></a>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </nav>
+                <div id="menu" class="menu">
+                    <div class="closeMenu" onclick="closeMenu()">X</div>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
             <div class="project-container">
                 <div class="projectTitleContainer">

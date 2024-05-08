@@ -1,9 +1,11 @@
 // For All
-let currentWidth = document.documentElement.clientWidth
-if(currentWidth < 930){
-    document.documentElement.textContent = 'Mobile version not available'
+let menu = document.getElementById('menu')
+function openMenu() {
+    menu.classList.add('menuIsOpen')
 }
-
+function closeMenu() {
+    menu.classList.remove('menuIsOpen')
+}
 
 
 //For Contact page

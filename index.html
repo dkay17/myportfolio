@@ -15,13 +15,21 @@
 				<div class="head">
 					<div class="title">Portfolio</div>
 					<nav id='nav'>
-						<a href="#"><button class='but activePage' onclick="homeButton()" >Home</button></a>
+						<a href="#"><button class='but activePage'>Home</button></a>
 						<a href="pages/about.html"><button class='but'>About</button></a>
 						<a href="pages/projects.html"><button class='but'>Projects</button></a>
 						<a href="pages/contact.html"><button class='but'>Contact</button></a>
+						<i class="fa-solid fa-bars" onclick="openMenu()"></i>
 					</nav>
+					<div id="menu" class="menu">
+						<div class="closeMenu" onclick="closeMenu()">X</div>
+						<a href="#">Home</a>
+						<a href="pages/about.html">About</a>
+						<a href="pages/projects.html">Projects</a>
+						<a href="pages/contact.html">Contact</a>
+					</div>
 				</div>
-				<div id='main'>
+				<div class='main'>
 					<div class="Intro">
 						<h3>Hello, I'm <strong id="MyName">Marvin Idibia</strong></h3>
 						<br>
