@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pageStyle.css">
-    <title>View CV - Marvin Idibia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact - Marvin Idibia</title>
 </head>
 <body>
     <div class="content">
@@ -24,24 +25,24 @@
                     <div class="form-content">
                         <div class="form-row">
                             Name:
-                            <input placeholder="Enter your name or Company Name" name="name">
+                            <input placeholder="Enter your name or Company Name" name="name" id="name">
                         </div>
                         <div class="form-row">
                             Location:
-                            <input placeholder="eg. Greater Accra,Ghana" name="location">
+                            <input placeholder="eg. Greater Accra,Ghana" name="location" id="location">
                         </div>
                         <div class="form-row">
                             Reason for contact:
-                            <input placeholder="eg. Employment" name="reason" itemref="ref">
+                            <input placeholder="eg. Employment" name="reason" id="reason">
                         </div>
                         <div class="form-row">
                             Message:
-                            <input placeholder="eg. Would like to hire me" name="msg">
+                            <input placeholder="eg. Would like to hire me" name="msg" id="msg">
                         </div>
                     </div>
                     <div class="submit">
-                        <div id="whatsapp" onclick="whatsapp()" class="whatsapp-email">WhatsApp</div>
-                        <div id="email" onclick="email()" class="whatsapp-email">E-mail</div>
+                        <div id="whatsapp" onclick="whatsapp()" class="whatsapp-email"><i class="fa-brands fa-whatsapp"></i>WhatsApp</div>
+                        <div id="email" onclick="email()" class="whatsapp-email"><i class="fa-solid fa-envelope"></i>E-mail</div>
                     </div>
                 </div>
             </div>
@@ -51,26 +52,3 @@
     <script src="pageScripts.js"></script>
 </body>
 </html>
-
-
-<!-- const download = () => {
-    const fileUrl = {Assign};
-    const fileName = 'Assign.txt';
-  
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileName;
-    link.click();
-  };
-    
-  return (
-      <div className="cv0">
-          <div className="cv01">
-              <b><span>Download</span></b>
-              <div id="cv">
-                  <span>My Resume</span>
-                  <button onClick={download} className="download">Download</button>
-              </div>
-          </div>
-      </div>
-  ) -->

@@ -39,7 +39,6 @@ body{
 }
 
 #main{
-    /* height: 600px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +53,6 @@ body{
 
 .title{
     height: 60px;
-    /* background-color: blue; */
     color: red;
     font-size: x-large;
     font-weight: bolder;
@@ -73,7 +71,6 @@ body{
     gap: 5%;
     position: relative;
     width: 45%;
-    /* background-color: blue; */
 }
 
 .but{
@@ -105,7 +102,6 @@ body{
 }
 
 .Intro{
-    /* background-color: gray; */
     border-radius: 20px;
     padding: 50px;
 }
@@ -114,13 +110,11 @@ body{
     color: red;
     font-size: xx-large;
     text-shadow: 0 0 15px red;
-    /* animation: glow 1s ease-in-out infinite alternate; */
 }
 
 .Links{
     position: relative;
     padding-left: 5%;
-    /* text-align: center; */
 }
 
 .social{
@@ -166,15 +160,11 @@ body{
 }
 
 #picture{
-    /* width: 50%; */
     height: 130px;
     bottom: 100px;
     padding: 0 15px;
     margin-top: 50px;
     content: "";
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
     border-bottom: 7px solid rgba(10, 10, 10, 0.6);
     border-top: 7px solid rgb(49, 37, 37);
     border-right: 16px solid rgb(49, 37, 37);
@@ -201,14 +191,3 @@ a{
     border-radius: 20px;
     text-shadow: 0 0 15px red;
 } 
-
-
-/* @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-} */
