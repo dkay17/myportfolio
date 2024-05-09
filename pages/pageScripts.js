@@ -2,9 +2,11 @@
 let menu = document.getElementById('menu')
 function openMenu() {
     menu.classList.add('menuIsOpen')
+    videos[0].style.display = 'none';
 }
 function closeMenu() {
     menu.classList.remove('menuIsOpen')
+    videos[0].style.display = 'block';
 }
 
 
