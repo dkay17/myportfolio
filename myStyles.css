@@ -87,8 +87,7 @@ body{
     display: none;
 }
 
-.fa-bars{
-    color: red;
+.bar-container{
     display: none;
 }
 
@@ -207,6 +206,9 @@ a{
         color: red;
         display: block;
         font-size: large;
+    }
+    .bar-container{
+        display: block;
     }
     .menuIsOpen{
         position: absolute;

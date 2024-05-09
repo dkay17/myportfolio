@@ -82,6 +82,10 @@ body{
     cursor: pointer;
 }
 
+.bar-container{
+    display: none;
+}
+
 .menu{
     display: none;
 }
@@ -265,6 +269,9 @@ video {
         color: red;
         display: block;
         font-size: large;
+    }
+    .bar-container{
+        display: block;
     }
     .menuIsOpen{
         position: absolute;
