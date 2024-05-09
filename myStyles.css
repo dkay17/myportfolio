@@ -222,8 +222,8 @@ a{
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         font-size: x-large;
-        padding: 1.5% 6% 1.5% 2% ;
-        gap: 1.5%;
+        padding: 15px 60px 15px 20px ;
+        gap: 15px;
         border-radius: 15px;
     }
     .closeMenu{
