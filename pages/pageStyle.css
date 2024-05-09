@@ -297,7 +297,7 @@ video {
     }
 
     .aboutSelf{
-        font-size: small;
+        font-size: large;
     }
 
     .form{
@@ -313,8 +313,12 @@ video {
     }
     
     .whatsapp-email{
-        font-size: smaller;
+        /* font-size: smaller; */
         width: 50%;
         overflow: hidden;
+    }
+
+    video{
+        width: 90%;
     }
 }
