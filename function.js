@@ -8,7 +8,7 @@ function closeMenu() {
 
 function download() {
     let link = document.createElement('a');
-    link.href = 'extra/CV.odt'
+    link.href = 'extra/CV.pdf'
     link.download = 'CV_Of_Marvin_Idibia'
     link.click()
 }
