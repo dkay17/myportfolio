@@ -1,62 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Explore Marvin Idibia's portfolio showcasing web development projects, designs, and skills. Contact for collaborations and projects.">
-		<meta name="Keyword" content="Marvin Idibia, Marvin Idibia Portfolio, Web development, front-end development, frontend development, web developer">
-		<meta name="author" content="Marvin Idibia">
-        <title>Marvin Idibia - Portfolio Home</title>
-        <link rel="stylesheet" href="myStyles.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Anderson - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link href="myStyles.css" rel="stylesheet" >
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body >
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="logo">
+                <img src="images/image2.png"  alt="LOGO">
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-primary transition-colors">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
 
-    <body>
-		<div class="content">
-			<div class="contentItems">
-				<div class="head">
-					<div class="title">Portfolio</div>
-					<nav id='nav'>
-						<a href="#"><button class='but activePage'>Home</button></a>
-						<a href="pages/about.html"><button class='but'>About</button></a>
-						<a href="pages/projects.html"><button class='but'>Projects</button></a>
-						<a href="pages/contact.html"><button class='but'>Contact</button></a>
-						<div class="bar-container"><i class="fa-solid fa-bars" onclick="openMenu()"></i></div>
-					</nav>
-					<div id="menu" class="menu">
-						<div class="closeMenu" onclick="closeMenu()">X</div>
-						<a href="#">Home</a>
-						<a href="pages/about.html">About</a>
-						<a href="pages/projects.html">Projects</a>
-						<a href="pages/contact.html">Contact</a>
-					</div>
-				</div>
-				<div class='main'>
-					<div id='picture1'>
-						<img src='./images/image1.jpg' alt="MArvin Idibia"/>
-					</div>
-					<div class="Intro">
-						<h3>Hello, I'm <strong id="MyName">Marvin Idibia</strong></h3>
-						<br>
-						<div>And I'm a Web developer</div>
-						<div class="Links">
-							<div class="social">
-								<!-- <i class="fa-brands fa-facebook"></i> -->
-								<a href="https://github.com/dkay17" target="_blank"><i class="fa-brands fa-github"></i></a>
-								<a href="https://www.linkedin.com/in/dkay17/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-								<!-- <i class="fa-brands fa-twitter"></i> -->
-							</div>
-							<div class="downloadCV" onclick="download()">Download CV</div>
-						</div>
-					</div>
-					<div id='picture2'>
-						<img src='./images/image1.jpg' alt="Marvin Idibia"/>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="flex items-center space-x-4">
+                <a href="https://github.com/dkay17" target="_blank" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                    <i class="ri-github-line ri-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marvinddh" target="_blank" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                    <i class="ri-linkedin-line ri-lg"></i>
+                </a>
+                <a href="https://x.com/Marvin_DDH" target="_blank" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                    <i class="ri-twitter-x-line ri-lg"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="min-h-screen pt-20 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://public.readdy.ai/ai/img_res/667c1b4b40d7be481851e3cb6c2af8ed.jpg')] bg-cover bg-center opacity-10"></div>
+            
+            <div class="container mx-auto px-6 py-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="relative z-10">
+                        <h1 class="text-5xl font-bold mb-6">
+                            Hi, I'm <span class="gradient-text">Marvin Idibia</span>
+                        </h1>
+                        <h2 class="text-2xl text-gray-600 mb-8">Full Stack Developer & Graphic Designer</h2>
+                        <p class="text-lg text-gray-600 mb-10">
+                            Passionate about creating beautiful, functional, and user-centered digital experiences. With 2+ years of experience in design and development, I help businesses grow through exceptional digital solutions.
+                        </p>
+                        <div class="flex space-x-4">
+                            <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+                                View My Work
+                            </button>
+                            <button class="border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary/5 transition-colors cursor-pointer whitespace-nowrap">
+                                Get in Touch
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="images/image1.jpg" 
+                             alt="John Anderson" 
+                             class="rounded-2xl shadow-2xl w-full object-cover"
+                             style="aspect-ratio: 3/4;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">My Expertise</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+                            <i class="ri-palette-line ri-2x text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                User Interface Design
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                User Experience Design
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Wireframing
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Design Systems
+                            </li>
+                        </ul>
+                    </div>
 
-		<script src="function.js"></script>
-    </body>
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+                            <i class="ri-code-s-slash-line ri-2x text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Development</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                HTML5 & CSS3
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                JavaScript 
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Node.JS & Express.JS
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Responsive Design
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+                            <i class="ri-tools-line ri-2x text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Tools & Skills</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Canva & Figma
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Git Version Control
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Krita
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                                Agile Methodology
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">Featured Projects</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+                        <img src="https://public.readdy.ai/ai/img_res/bea3098cb5a6887d281b6a1aa2273f1a.jpg" 
+                             alt="Fitness App" 
+                             class="w-full object-cover"
+                             style="aspect-ratio: 4/3;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">FitTrack Pro</h3>
+                                <p class="text-gray-200">Fitness tracking app with AI-powered workout recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+                        <img src="https://public.readdy.ai/ai/img_res/efe033c4acc32cab5c124c225f042aed.jpg" 
+                             alt="E-commerce Website" 
+                             class="w-full object-cover"
+                             style="aspect-ratio: 4/3;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">StyleHub</h3>
+                                <p class="text-gray-200">Modern e-commerce platform for fashion enthusiasts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+                        <img src="https://public.readdy.ai/ai/img_res/01346b089b4f13e45993b5297128f065.jpg" 
+                             alt="Analytics Dashboard" 
+                             class="w-full object-cover"
+                             style="aspect-ratio: 4/3;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <div>
+                                <h3 class="text-xl font-semibold text-white mb-2">DataViz Pro</h3>
+                                <p class="text-gray-200">Advanced analytics dashboard with real-time insights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+                        View All Projects
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-16">Let's Work Together</h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-8 mb-12">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4">
+                                <i class="ri-mail-line text-primary"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2">Email</h3>
+                            <p class="text-gray-600">mayakay257@gmail.com</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4">
+                                <i class="ri-map-pin-line text-primary"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2">Location</h3>
+                            <p class="text-gray-600">Greater Accra, Ghana</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4">
+                                <i class="ri-time-line text-primary"></i>
+                            </div>
+                            <h3 class="font-semibold mb-2">Availability</h3>
+                            <p class="text-gray-600">Open for Projects</p>
+                        </div>
+                    </div>
+                    <form class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:border-primary" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:border-primary" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-200 rounded focus:outline-none focus:border-primary" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors cursor-pointer whitespace-nowrap">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <a href="#" class="logo">
+                        <img src="images/image2.png"  alt="LOGO">
+                    </a>
+                    <p class="mb-6">Creating meaningful digital experiences through thoughtful design and development.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/dkay17" class="hover:text-white transition-colors">
+                            <i class="ri-github-line ri-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marvinddh/" class="hover:text-white transition-colors">
+                            <i class="ri-linkedin-line ri-lg"></i>
+                        </a>
+                        <a href="https://x.com/Marvin_DDH" class="hover:text-white transition-colors">
+                            <i class="ri-twitter-x-line ri-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#skills" class="hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="ri-mail-line mr-2"></i>
+                            mayakay257@gmail.com
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-map-pin-line mr-2"></i>
+                            Greater Accra, Ghana
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-phone-line mr-2"></i>
+                            +233593727250
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; 2025 Marvin Idibia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                
+                const notification = document.createElement('div');
+                notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 translate-y-0';
+                notification.textContent = 'Message sent successfully!';
+                document.body.appendChild(notification);
+                setTimeout(() => {
+                    notification.style.transform = 'translateY(200%)';
+                    setTimeout(() => notification.remove(), 300);
+                }, 3000);
+
+                form.reset();
+            });
+        });
+    </script>
+</body>
 </html>
