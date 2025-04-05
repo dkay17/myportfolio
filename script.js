@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // const hamburger = document.querySelector('.hamburger');
+    // const navOptions = document.querySelector('.navOptions');
+    
+    // hamburger.addEventListener('click', function () {
+    //   if (navOptions.style.display === 'flex') {
+    //     navOptions.style.display = 'none';
+    //   } else {
+    //     navOptions.style.display = 'flex';
+    //     navOptions.style.flexDirection = 'column';
+    //   }
+    // });
+
     const form = document.querySelector('form');
     form.addEventListener('submit', function(e) {
         e.preventDefault();
