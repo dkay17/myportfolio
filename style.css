@@ -418,7 +418,7 @@ footer hr{
         gap: 2%;
     }
     .bioContainer, .imgContainer{
-        width: 80%;
+        width: 100%;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
