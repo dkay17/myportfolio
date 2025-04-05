@@ -457,6 +457,7 @@
         height: 12vh;
         width: 100%;
         background-color: black;
+        /* background-color: red; */
         position: fixed;
         display: flex;
         align-items: center;
@@ -500,14 +501,14 @@
         margin: auto;
     }
     header .socials{
-        width: 50%;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         /* background-color: rebeccapurple; */
     }
     header .socials a{
-        padding: 1.5%;
+        padding: 3%;
         font-size: 20px;
         border-radius: 10px;
         /* background-color: transparent; */
@@ -624,7 +625,7 @@
         background-color: rgba( 10, 10, 10, 0.2);
     } */
     .skills h1, .projects h1, .contact h1{
-        font-size: 35px;
+        font-size: 28px;
     }
     .skillCatories{
         width: 100%;
@@ -712,14 +713,14 @@
         justify-content: end;
         padding: 5vh;
         gap: 2vh;
-        display: none;
+        display: flex;
     }
     .projectOpt .opt:hover{
         transform: scale(1.1);
     }
-    .projectOpt .opt:hover .content{
+    /* .projectOpt .opt:hover .content{
         display: flex;
-    }
+    } */
     .projectOpt .opt .content p{
         font-size: 18px;
     }
@@ -760,7 +761,7 @@
     }
     .contactOpt .opt{
         background-color: rgba( 10, 10, 10, 0.8);
-        width: 60%;
+        width: 70%;
         height: 30vh;
         border-radius: 15px;
         padding: 1.5%;
@@ -780,7 +781,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 20px;
+        font-size: 18px;
         gap: 2vh;
         color: #fff;
     }
@@ -902,13 +903,20 @@
     .socials.last{
         width: 60%;
         margin: 3vh 0;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-between;
+        height: 8vh;
     }
-    .socials.last i{
+    .socials.last a{
         background-color: rgba( 255, 255, 255, 0.8);
         color: black;
-        padding: 1.5%;
-        font-size: 20px;
+        padding: 2%;
         border-radius: 10px;
+    }
+    .socials.last i{
+        background-color: transparent;
+        font-size: 30px;
         cursor: pointer;
         text-decoration: none;
     }
