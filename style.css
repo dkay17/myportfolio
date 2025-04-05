@@ -412,7 +412,7 @@ footer hr{
         width: 50%;
     }
     .about{
-        height: 150vh;
+        height: 140vh;
         flex-direction: column;
         align-items: center;
         gap: 2%;
@@ -424,8 +424,26 @@ footer hr{
         border-radius: 10px;
         padding: 10px;
     }
+    .bio h1{
+        font-size: 30px;
+    }
+    .bio h1 span{
+        color: blue;
+    }
+    .bio h2{
+        font-size: 20px;
+    }
+    .bio p{
+        font-size: 17px;
+    }
     .bio .btn a{
-        width: 40%;
+        width: 50%;
+    }
+    .bio  button, .contact form button, .projects .view button{
+        font-size: 15px;
+    }
+    .contact form button:hover, .projects .view button:hover, .bio button:hover{
+        font-size: 18px;
     }
     .skillCatories, .projectOpt, .contactOpt, .contact form .first{
         flex-direction: column;
@@ -436,21 +454,23 @@ footer hr{
         width: 90%;
     }
     .projects .view a{
-        width: 40%;
+        width: 60%;
     }
     .contact form{
         width: 90%;
     }
     .field{
         width: 100%;
-        
     }
     .contact form .second{
-        width: 80%;
+        width: 90%;
         gap: 5vh;
     }
+    .contact form button{
+        width: 60%;
+    }
     footer .info.one{
-        padding: 1vh;
+        padding: 0.4vh;
         flex-direction: column;
     }
     footer .info.one .opt{
