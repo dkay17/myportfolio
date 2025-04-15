@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //     navOptions.style.flexDirection = 'column';
     //   }
     // });
+    
 
     const form = document.querySelector('form');
     form.addEventListener('submit', function(e) {
@@ -25,5 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = mailtoLink;
         form.reset();
     });
+
+
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add("show");
+    //         }
+    //     });
+    // }, { threshold: 0.2 }); // 20% of the element must be visible
+  
+    // document.querySelectorAll(".design").forEach((el) => observer.observe(el));
 });
 

@@ -23,19 +23,20 @@
     <title>Marvin Idibia - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" >
+    <link href="animate.css" rel="stylesheet" >
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
+            <div class="logo newLogo">
                 <img src="images/image2.png" alt="LOGO">
             </div>
             <div class="navOptions">
-                <a href="#about" >About</a>
-                <a href="#skills" >Skills</a>
-                <a href="#projects" >Projects</a>
-                <a href="#contact" >Contact</a>
+                <a href="#about" class="newLink">About</a>
+                <a href="#skills" class="newLink">Skills</a>
+                <a href="#projects" class="newLink">Projects</a>
+                <a href="#contact" class="newLink">Contact</a>
             </div>
             <div class="socials first">
                 <a href="https://github.com/dkay17" target="_blank" rel="noopener">
@@ -60,7 +61,7 @@
         <section id="about" class="about">
             <div class="bioContainer">
                 <div class="bio">
-                    <h1>
+                    <h1 class="newText">
                         Hi, I'm <span>Marvin Idibia</span>
                     </h1>
                     <h2>Full Stack Developer & Graphic Designer</h2>
@@ -75,13 +76,13 @@
                 </div>
             </div>
             <div class="imgContainer">
-                <img src="images/me.jpg" alt="Marvin Idibia">
+                <img class="newImage" src="images/me.jpg" alt="Marvin Idibia">
             </div>
         </section>
         <section id="skills" class="skills">
             <h1>My Expertise</h1>
             <div class="skillCatories">
-                <div class="design">
+                <div class="design one newDesign">
                     <div class="icon">
                         <i class="ri-palette-line ri-2x text-primary "></i>
                     </div>
@@ -107,7 +108,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="design">
+                <div class="design two newDesign">
                     <div class="icon">
                         <i class="ri-code-s-slash-line ri-2x text-primary"></i>
                     </div>
@@ -133,7 +134,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="design">
+                <div class="design three newDesign">
                     <div class="icon">
                         <i class="ri-tools-line ri-2x text-primary"></i>
                     </div>
@@ -164,19 +165,19 @@
         <section id="projects" class="projects">
             <h1>My Projects</h1>
             <div class="projectOpt">
-                <div class="opt one">
+                <div class="opt one newOpt">
                     <div class="content">
                         <h2>FitTrack Pro</h2>
                         <p>Fitness tracking app with AI-powered workout recommendations</p>
                     </div>
                 </div>
-                <div class="opt two">
+                <div class="opt two newOpt">
                     <div class="content">
                         <h2>StyleHub</h2>
                         <p>Modern e-commerce platform for fashion enthusiasts</p>
                     </div>
                 </div>
-                <div class="opt three">
+                <div class="opt three newOpt">
                     <div class="content">
                         <h2>DataViz Pro</h2>
                         <p>Advanced analytics dashboard with real-time insights</p>
@@ -294,5 +295,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="animate.js"></script>
 </body>
 </html>
